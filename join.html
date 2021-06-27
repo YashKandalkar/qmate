@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./public/css/home.css" /> -->
+    <link rel="stylesheet" href="./public/css/home.css" />
+    <link rel="stylesheet" href="./public/css/play.css" />
+    <title>Play</title>
+  </head>
+
+  <body id="play-body">
+    <nav class="navbar navbar-expand-lg">
+      <button
+        class="navbar-toggler"
+        type="button "
+        data-toggle="collapse "
+        data-target="#navbarNav "
+        aria-controls="navbarNav "
+        aria-expanded="false "
+        aria-label="Toggle navigation "
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse d-flex justify-content-around"
+        id="navbarNav "
+      >
+        <ul class="navbar-nav d-flex">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- nav completed -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container col-md-9">
+          <div
+            id="question-div"
+            style="font-size: 1.5rem"
+            class="
+              container
+              d-flex
+              justify-content-center
+              align-items-center
+              w-75
+              border border-dark
+              play-question-div
+            "
+          >
+            Please wait for the host to start the quiz!
+          </div>
+
+          <!-- question div finished -->
+          <div class="container w-75" style="margin-top: 6rem">
+            <div class="row">
+              <div class="col-md-6">
+                <div
+                  id="play-option-1"
+                  optionNo="1"
+                  class="
+                    container
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    border border-dark
+                    play-option-div
+                  "
+                ></div>
+              </div>
+              <!-- option1 -->
+              <div class="col-md-6">
+                <div
+                  id="play-option-2"
+                  optionNo="2"
+                  class="
+                    container
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    border border-dark
+                    play-option-div
+                  "
+                ></div>
+              </div>
+              <!-- option2-->
+            </div>
+            <!-- first row completed -->
+            <div class="row mt-4">
+              <div class="col-md-6">
+                <div
+                  id="play-option-3"
+                  optionNo="3"
+                  class="
+                    container
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    border border-dark
+                    play-option-div
+                  "
+                ></div>
+              </div>
+              <!--option3-->
+              <div class="col-md-6">
+                <div
+                  id="play-option-4"
+                  optionNo="4"
+                  class="
+                    container
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    border border-dark
+                    play-option-div
+                  "
+                ></div>
+              </div>
+              <!--option4-->
+            </div>
+            <!-- second row completed -->
+            <div class="container text-center my-4">
+              <button
+                id="play-save-btn"
+                submitted="false"
+                class="btn btn-success btn-lg"
+              >
+                SAVE
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- time clock-section -->
+        <div class="container col-md-3 border border-dark">
+          <h2 class="text-center">Time Left</h2>
+          <div
+            id="time-left"
+            class="
+              container
+              display-3
+              border
+              d-flex
+              justify-content-center
+              align-items-center
+              border-dark
+              h-25
+              mt-4
+            "
+          ></div>
+          <div class="container border border-dark h-50 mt-4">
+            <h3 class="text-center">Your Score</h3>
+            <div
+              id="player-score"
+              class="
+                container
+                border
+                display-4
+                d-flex
+                justify-content-center
+                align-items-center
+                border-dark
+                h-25
+                mt-3
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+        <div class="container col-md-3 border border-dark">
+            <div class="container text-center border border-dark h-50">
+            </div>
+        </div>  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+      crossorigin="anonymous "
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns "
+      crossorigin="anonymous "
+    ></script>
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- REALTIME -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <!-- AUTH -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+    <script type="module" src="./src/firebaseApi/firebase.js"></script>
+
+    <script type="module" src="./src/js/play.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js " integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF " crossorigin="anonymous "></script>
+    -->
+  </body>
+</html>

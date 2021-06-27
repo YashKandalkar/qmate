@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+body {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+nav {
+  background-color: black;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  justify-content: space-around;
+  position: fixed;
+  height: 7vh;
+  font-size: 20px;
+  bottom: 0;
+  border: 0.5px solid black;
+}
+
+#login-form {
+  border: 2px solid black;
+  margin-top: 10rem;
+}
+
+.home-card {
+  width: 22rem;
+  height: 25rem;
+  margin-bottom: 8rem;
+  cursor: pointer;
+}
+
+.card-host-link:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    #2b69c5,
+    #6b62c7,
+    #9a56c1,
+    #c146b1,
+    #e03399
+  );
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-host-link:hover:before {
+  width: 100%;
+  visibility: visible;
+}
+
+#loginbody {
+  background-image: url(../images/stock-footage-kids-cubes-on-blue-background-loop-stop-motion-seamless-looping-hd-x.jpg);
+  background-size: cover;
+}
+
+.submitForm {
+  padding: 4px 3rem;
+}
+
+#signup-form {
+  border: 2px solid black;
+  margin-top: 3rem;
+}
+
+#createBtn {
+  padding: 10px 4rem;
+}
+
+#modalBtn {
+  margin-top: 25rem;
+  padding: 10px 3.5rem;
+}
+
+.quiz-div {
+  background-color: white;
+}
+
+.effect1 {
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+hr {
+  background-color: black;
+}
+/* slider added */
+
+.content {
+  width: 100%;
+  position: relative;
+  color: #fff;
+}
+
+.text {
+  text-transform: uppercase;
+  height: 100px;
+  display: flex;
+  text-align: left;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  /* color: #ffbd59; */
+  margin-left: 14px;
+  box-sizing: border-box;
+  animation: slider 6s linear infinite;
+}
+
+@keyframes slider {
+  0% {
+    margin-top: -320px;
+  }
+  5% {
+    margin-top: -160px;
+  }
+  30% {
+    margin-top: -160px;
+  }
+  35% {
+    margin-top: 0px;
+  }
+  65% {
+    margin-top: 0px;
+  }
+  70% {
+    margin-top: 160px;
+  }
+  100% {
+    margin-top: 160px;
+  }
+}
+/* slider  */
+
+.signup-btn {
+  background: linear-gradient(to right, transparent 50%, black 50%);
+  background-size: 200% auto;
+  background-position: left;
+  padding: 10px 45px;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid yellow;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 3px 8px 22px rgba(22, 21, 21, 0.15);
+  transition: background-position 0.5s;
+}
+
+.signup-btn:hover {
+  background-position: right;
+  color: white;
+}
+
+.host-btn,
+.join-btn {
+  background: linear-gradient(to right, transparent 50%, black 50%);
+  background-size: 200% auto;
+  background-position: left;
+  padding: 10px 45px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-position 0.5s;
+  color: black;
+}
+
+.join-btn:hover {
+  background-position: right;
+  color: white;
+}
+
+.host-btn:hover {
+  background-position: right;
+  color: white;
+}
+
+.height {
+  height: 100vh;
+}

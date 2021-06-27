@@ -1,0 +1,35 @@
+#room-body {
+  background: #fc466b;
+  background: -webkit-linear-gradient(to right, #3f5efb, #fc466b);
+  background: linear-gradient(to right, #3f5efb, #fc466b);
+}
+
+#save-test-btn {
+  margin-left: 10rem;
+}
+
+#copy-btn {
+  margin-left: 15rem;
+}
+
+.home-tab {
+  margin-left: 16rem;
+}
+
+.result-div {
+  height: 8vh;
+  font-size: 2rem;
+  padding: 10px 10px;
+}
+
+#question-list-container {
+  border-right: 1px solid black;
+}
+
+#result {
+  border-left: 1px solid black;
+}
+
+.active-question {
+  background-color: #fc466b;
+}

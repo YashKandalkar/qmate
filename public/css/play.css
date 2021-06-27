@@ -1,0 +1,32 @@
+.play-option-div {
+  height: 5rem;
+  border-radius: 10px;
+}
+
+.play-question-div {
+  height: 10rem;
+  margin-top: 6rem;
+  border-radius: 10px;
+}
+
+#play-save-btn {
+  padding: 3px 5rem;
+}
+
+#play-body {
+  background: #fc00ff;
+  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);
+  background: linear-gradient(to right, #00dbde, #fc00ff);
+}
+
+.height {
+  height: 100vh;
+}
+
+.play-div {
+  background-color: white;
+}
+
+.selected-option {
+  background-color: #00dbde;
+}

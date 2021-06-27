@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./public/css/home.css" />
+    <link rel="stylesheet" href="./public/css/room.css" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body id="room-body">
+    <nav class="navbar navbar-expand-lg">
+      <div
+        class="collapse navbar-collapse d-flex justify-content-around"
+        id="navbarNav "
+      >
+        <div id="room-code" style="color: white">code</div>
+        <button class="btn btn-primary" id="copy-code-btn">Copy Code</button>
+        <button
+          id="start-test-btn"
+          class="btn btn-outline-success btn-lg border border-dark"
+        >
+          START TEST
+        </button>
+      </div>
+    </nav>
+
+    <!-- nav complete -->
+
+    <div class="container-fluid">
+      <h1 class="text-center mt-2">RESULTS</h1>
+      <br />
+      <div class="row">
+        <div
+          class="text-center col-md-6 border border-dark"
+          style="height: 100vh"
+        >
+          <h2 class="text-center">ALL QUESTIONS</h2>
+          <div class="container border border-dark" style="min-height: 30vh">
+            <ul
+              id="question-list"
+              class="d-flex flex-column text-left text-truncate"
+            ></ul>
+          </div>
+        </div>
+
+        <div
+          id="result"
+          class="col-md-6 border border-dark"
+          style="height: 100vh"
+        >
+          <div class="container text-center">
+            <h2>Results</h2>
+            <ul>
+              <!-- <div class="row ">
+              <div class="col-md-5 border border-dark mt-3 mr-4 ml-4 " style="height:6vh ">
+                <p> Name</p>
+              </div>
+              <div class="col-md-5 border border-dark mt-3 " style="height:6vh ">
+                <p>Score</p>
+              </div>
+            </div> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- REALTIME -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <!-- AUTH -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+    <script type="module" src="./src/firebaseApi/firebase.js"></script>
+
+    <script type="module" src="./src/js/result.js"></script>
+  </body>
+</html>

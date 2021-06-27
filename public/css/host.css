@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+#host-body {
+    background: #FC466B;
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+}
+
+#home-body {
+    background-color: #F3F4F6;
+}
+
+.createQuiz-btn,
+.tutorial-btn {
+    background: linear-gradient(to right, transparent 50%, red 50%);
+    background-size: 200% auto;
+    background-position: left;
+    padding: 10px 45px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-position .5s;
+    color: black;
+}
+
+.tutorial-btn:hover {
+    background-position: right;
+    color: white;
+}
+
+.createQuiz-btn:hover {
+    background-position: right;
+    color: white;
+}
+
+.room-name {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+}
+
+.room-div {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    overflow-y: scroll;
+}
+
+.room-div::-webkit-scrollbar {
+    display: none;
+}
+
+.room-div {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

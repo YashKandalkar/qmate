@@ -1,0 +1,16 @@
+                                #create-body {
+                                    background: #FF512F;
+                                    /* fallback for old browsers */
+                                    background: -webkit-linear-gradient(to right, #DD2476, #FF512F);
+                                    /* Chrome 10-25, Safari 5.1-6 */
+                                    background: linear-gradient(to right, #DD2476, #FF512F);
+                                }
+                                
+                                .full-height {
+                                    height: 100vh;
+                                }
+                                
+                                .create-div,
+                                .room-div {
+                                    height: 100vh;
+                                }
